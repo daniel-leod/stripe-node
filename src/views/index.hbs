@@ -1,0 +1,44 @@
+<div class="col-md-4 mx-auto">
+  <div class="card mt-4">
+    <img
+      src="https://www.scnsoft.com/blog-pictures/testing/software-product-testing.png"
+      alt=""
+      class="img-top"
+    />
+    <div class="card-body text-center">
+      <h3>$30</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
+        quasi maiores voluptatem porro commodi? Vel?
+      </p>
+    </div>
+    <div class="card-footer text-center">
+      {{! <form action="/create-checkout-session" method="POST">
+        <button type="submit">Checkout</button>
+      </form> }}
+
+      <form action="/pay" method="POST" class="mt-4">
+        <script
+          src="https://checkout.stripe.com/checkout.js"
+          class="stripe-button"
+          data-key="pk_test_51J8yEqKWyfYi8LBr5mduuGgangVP1inL8kkfE5DWcB0kzYClvWDBBeMEzOLPz2rHhcdgEvUvhXHmSA3zbzEtwvVm00FZx12vfE"
+          data-name="T-shirt"
+          data-description="Comfortable cotton t-shirt"
+          data-amount="500"
+          data-currency="nok"
+        >
+        </script>
+        <script>
+          document.getElementsByClassName('stripe-button-el')[0].style.display =
+          'none'
+        </script>
+
+        <button class="btn btn-dark btn-block col-12">
+          Buy
+          <i class="fa fa-shopping-cart"></i>
+        </button>
+      </form>
+
+    </div>
+  </div>
+</div>
